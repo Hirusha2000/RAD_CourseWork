@@ -5,7 +5,7 @@ interface ModifyCartProps {data: any}
 interface ModifyCartState {itemCount: number}
 export class ModifyCart
     extends Component<ModifyCartProps,
-                      ModifyCartState> {
+        ModifyCartState> {
 
     public static itemsList:CartItem[] = [];
 
@@ -74,11 +74,11 @@ export class ModifyCart
                                             text-center">
                 <button className="float-left text-[8px]
                                         bg-yellow-300 rounded-lg h-3 w-4"
-                                  onClick={onDecreaseItemCount}>-</button>
+                        onClick={onDecreaseItemCount}>-</button>
                 <small className="text-[8px]">{itemCount}</small>
                 <button className="float-right text-[8px]
                                         bg-yellow-300 rounded-lg h-3 w-4"
-                                  onClick={onIncreaseItemCount}>+</button>
+                        onClick={onIncreaseItemCount}>+</button>
             </div>
         );
     }
