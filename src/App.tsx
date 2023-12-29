@@ -1,20 +1,26 @@
 import React from 'react';
 import './App.css';
+import {Navbar} from "./view/common/Navbar/Navbar";
+import {MainContent} from "./view/common/MainContent/MainContent";
+import {Footer} from "./view/common/Footer/Footer";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {DefaultLayout} from "./view/common/DefaultLayout/DefaultLayout";
+import {Login} from "./view/pages/Login/Login";
 
 function App() {
     return (
-        <>
-            {/*Inline way of defining styles*/}
-            <div style={{backgroundColor: "red",
-                padding: 10, textAlign: "center"}}>
-                Inline CSS Box</div>
-            <br/>
-            {/*Using external CSS class of defining styles*/}
-            <div className="box">External CSS Box</div>
-            <br/>
-            {/*This is what tailwind CSS uses kind of atomic utility classes*/}
-            <div className="bg-red p-10 text-center">Tailwind CSS Utility Class Box</div>
-        </>
+        <BrowserRouter>
+            {/*<DefaultLayout/>*/}
+            {/* <Login/>*/}
+            <Routes>
+                <Route path="/*"
+                       Component={DefaultLayout}>
+                </Route>
+                <Route path="/login"
+                       Component={Login}>
+                </Route>
+            </Routes>
+        </BrowserRouter>
     );
 }
 
