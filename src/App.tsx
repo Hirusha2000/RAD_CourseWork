@@ -5,6 +5,7 @@ import {MainContent} from "./view/common/MainContent/MainContent";
 import {Footer} from "./view/common/Footer/Footer";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {DefaultLayout} from "./view/common/DefaultLayout/DefaultLayout";
+
 import {Login} from "./view/pages/Login/Login";
 
 function App() {

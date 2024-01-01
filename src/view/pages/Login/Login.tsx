@@ -3,39 +3,41 @@ import {Component} from "react";
 export class Login extends Component {
     render() {
         return (
-            <div className="flex h-screen
-                             bg-[#444544]">
-                <div className="h-auto mt-4
-                                mb-4 pl-9
-                                mx-auto
-                                border-gray-500
-                                border-[0.5px]
-                                bg-white">
-                    <h2 className="pt-2 pb-2
-                                  text-3xl
-                                  underline decoration-2">Sign In</h2>
-                    <form className="h-auto p-2
-                                     justify-center">
-                        <div className="p-2">
-                            <label className="text-[7px]">
-                                Email:</label>
-                            <input className="float-right
-                                               border-[1px]
-                                               border-green-200"
-                                   type="email"/>
+            <div className="flex h-screen bg-gray-800 justify-center items-center">
+                <div className="bg-white p-8 rounded-lg shadow-md w-96">
+                    <h2 className="text-3xl font-bold mb-4 text-center text-gray-800">
+                        Sign In
+                    </h2>
+                    <form className="space-y-4">
+                        <div>
+                            <label htmlFor="email" className="text-sm block text-gray-600">
+                                Email:
+                            </label>
+                            <input
+                                id="email"
+                                className="w-full p-2 border border-green-200 rounded"
+                                type="email"
+                                placeholder="Enter your email"
+                            />
                         </div>
-
-                        <div className="p-2">
-                            <label className="text-[7px]">
-                                Password:</label>
-                            <input className="float-right
-                                               border-[1px]
-                                               border-green-200"
-                                   type="password"/>
+                        <div>
+                            <label htmlFor="password" className="text-sm block text-gray-600">
+                                Password:
+                            </label>
+                            <input
+                                id="password"
+                                className="w-full p-2 border border-green-200 rounded"
+                                type="password"
+                                placeholder="Enter your password"
+                            />
                         </div>
-                        <div className="mt-2">
-                            <button className="mt-3 w-full bg-green-400 text-[7px] p-[6px]">
-                                Sign In</button>
+                        <div>
+                            <button
+                                className="w-full bg-green-400 text-white p-2 rounded hover:bg-green-500"
+                                type="submit"
+                            >
+                                Login
+                            </button>
                         </div>
                     </form>
                 </div>
