@@ -1,4 +1,5 @@
 import {Component} from "react";
+import {Link} from "react-router-dom";
 
 export class Login extends Component {
     render() {
@@ -40,6 +41,15 @@ export class Login extends Component {
                             </button>
                         </div>
                     </form>
+                    <div className="mt-4 text-center">
+                        <p className="text-gray-600">
+                            Don't have an account?{" "}
+                            <Link to="/register" className="text-blue-500 hover:underline">
+                                Create New Account
+                            </Link>
+                            {/* If not using React Router, you can replace the Link with a button or other navigation mechanism */}
+                        </p>
+                    </div>
                 </div>
             </div>
         );
