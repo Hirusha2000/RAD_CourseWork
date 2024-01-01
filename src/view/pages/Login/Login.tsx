@@ -1,5 +1,26 @@
-import {Component} from "react";
-import {Link} from "react-router-dom";
+// Import necessary modules
+import React, {Component} from "react";
+import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
+import {CreateAccount} from "../CreateAccount/CreateAccount";
+
+
+// App component
+const App = () => {
+    return (
+        <Router>
+            <Routes>
+
+                <Route path="/register" element={<CreateAccount />} />
+            </Routes>
+        </Router>
+    );
+};
+
+export default App;
+
+
+
+// Rest of your code here
 
 export class Login extends Component {
     render() {

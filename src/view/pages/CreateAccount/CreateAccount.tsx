@@ -1,5 +1,5 @@
 import {Component} from "react";
-import {Link} from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 export class CreateAccount extends Component {
     render() {
