@@ -7,13 +7,20 @@ import {CreateAccount} from "../CreateAccount/CreateAccount";
 // App component
 const App = () => {
     return (
-        <Router>
+       /* <Router>
             <Routes>
 
                 <Route path="/register" element={<CreateAccount />} />
             </Routes>
-        </Router>
-    );
+        </Router>*/
+
+
+
+    <Routes>
+        <Route path="/register" element={<CreateAccount />} />
+    </Routes>
+
+);
 };
 
 export default App;
