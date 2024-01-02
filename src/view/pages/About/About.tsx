@@ -3,19 +3,24 @@ import {Component} from "react";
 export class About extends Component {
     render() {
         return (
-            <div className="flex">
-                <div className="h-auto pt-5 pl-10
-                               pr-10 mx-auto">
-                    <h2 className="pb-3 text-3xl
-                                   text-green-400
-                                   underline
-                                   decoration-2">About Us</h2>
-                    <p className="pb-3 text-[9px]">
-                        At Organic Shop, we believe in the power of nature to nourish, heal, and inspire. Our journey began with a simple yet profound realization: the importance of embracing organic living for the well-being of both individuals and the planet.
+            <div className="flex justify-center items-center h-screen">
+                <div className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3 p-6">
+                    <h2 className="text-3xl text-blue-400 font-bold mb-4">
+                        About Us
+                    </h2>
+                    <p className="text-sm md:text-base lg:text-lg">
+                        At Darshana Mobile, we are passionate about providing you with the
+                        latest and most innovative mobile technology. Our journey began with
+                        a commitment to offer top-quality mobile devices that cater to your
+                        communication and entertainment needs.
                         <br/>
                         <br/>
-                        Mission:
-                        Our mission is to make organic living accessible to all, fostering a harmonious relationship between people and the environment. We are committed to offering a diverse range of high-quality, ethically sourced, and sustainable products that promote health, wellness, and a greener lifestyle.
+                        <strong>Mission:</strong> Our mission is to make cutting-edge mobile
+                        technology accessible to everyone. We strive to create a seamless
+                        and enjoyable experience for our customers by offering a diverse
+                        range of high-quality mobile devices and accessories. Darshana
+                        Mobile is dedicated to providing exceptional service and staying
+                        ahead in the dynamic world of mobile technology.
                     </p>
                 </div>
             </div>
