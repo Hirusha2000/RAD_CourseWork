@@ -1,10 +1,15 @@
 import {Component} from "react";
+import bgi2 from '../../../images/ab2.jpg'
 
 export class Contact extends Component {
     render() {
+        const backgroundImage = `linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(${bgi2})`;
+
         return (
+            <div className=" "
+                 style={{backgroundImage, backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
             <div className="flex justify-center items-center h-screen">
-                <div className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3 p-6 bg-white rounded-lg shadow-md">
+                <div className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3 p-6 bg-white rounded-lg shadow-md ">
                     <h2 className="text-3xl text-blue-400 text-center font-bold mb-4">
                         Contact Us
                     </h2>
@@ -43,6 +48,7 @@ export class Contact extends Component {
                         </div>
                     </form>
                 </div>
+            </div>
             </div>
         );
     }
